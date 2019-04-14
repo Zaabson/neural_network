@@ -65,7 +65,7 @@ class ConvolutionalNeuralNetwork:
         self.W = np.array(self.W)
 
 
-    def forward_prop(self, input, output):  # forward propagation
+    def forward_prop(self, input, output):
 
         self.Output = output.reshape((output.shape[0], 1))
 
@@ -81,7 +81,7 @@ class ConvolutionalNeuralNetwork:
         self.A[-1] = activ_f_dict[self.activs[-1]](self.Z[-1])
 
 
-    def backprop(self): # backpropagaton - gradient calculation
+    def backprop(self):
 
         self.dx = ["xd" for _ in range(self.n-1)]
 
