@@ -42,7 +42,8 @@ activ_deriv_dict = {"sigmoid": sigmoid_deriv, "none": identity_deriv, "tanh": ta
 
 class ConvolutionalNeuralNetwork:
 
-
+    '''convolutional densely connected neural network, no custom layers'''
+    
     def __init__(self, dims, activations):
         """dims is a tuple with numbers of neurons in each layer
            activations is a tuple of names(strings) of activation functions for each layer
